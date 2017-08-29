@@ -1,0 +1,129 @@
+! #if __has_include(".extend.Xresources")
+! #include ".extend.Xresources"
+! #endif
+
+! ^ The above lines are no comments!
+! Leave them as they are if a file ~/.extend.Xresources is being used on your system.
+! config can be added there or also here below.
+! For comments use "!"
+
+! Xft.dpi: 96
+! Xft.antialias: true
+! Xft.hinting: true
+! Xft.rgba: rgb
+! Xft.autohint: false
+! Xft.hintstyle: hintslight
+! Xft.lcdfilter: lcddefault
+
+! XTerm*background: #2b2b2b
+! XTerm*foreground: #e7e7e7
+! XTerm*pointerColor: #16A085
+! XTerm*faceName: Fixed
+! XTerm*faceSize: 11
+
+
+*.font: xft:PragmataPro Nerd Font:pixelsize=14
+
+Xft.dpi:                        96
+Xft.antialias:                  1
+Xft.autohint:                   1
+Xft.hinting:                    1
+Xft.hintstyle:                  hintslight
+Xft.lcdfilter:                  lcdlight
+Xft.rgba:                       rgb
+
+URxvt*termName:                 rxvt-256color
+URxvt.depth:                    32
+URxvt*lineSpace:                1
+URxvt.letterSpace:              -1
+URxvt.iso14755:                 false
+URxvt.iso14755_52:              false
+URxvt*geometry:                 65x17
+URxvt.scrollBar:                false
+URxvt*loginShell:               true
+URxvt.internalBorder:           15
+URxvt.perl-ext:	 		default,matcher
+URxvt.perl-ext-common:  default,clipboard
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.keysym.Shift-Control-C: perl:clipboard:copy
+URxvt.url-launcher:             chromium
+URxvt.matcher.button: 		1
+URxvt.keysym.Control-Left:   \033[1;5D
+URxvt.keysym.Control-Right:  \033[1;5C
+
+*.foreground:   #ffeefc
+*.background:   #141021
+*.cursorColor:  #c16772
+
+! black
+*.color0:       #4f4858
+*.color8:       #545d67
+
+! red
+*.color1:       #c05c47
+*.color9:       #c16772
+
+! green
+*.color2:       #428e8e
+*.color10:      #afda6e
+
+! yellow
+*.color3:       #e4b226
+*.color11:      #ebcf1a
+
+! blue
+*.color4:       #4457a3
+*.color12:      #4880a5
+
+! magenta
+*.color5:       #903a62
+*.color13:      #9568a1
+
+! cyan
+*.color6:       #7aa1dc
+*.color14:      #abbcda
+
+! white
+*.color7:       #c4b7c5
+*.color15:      #ffeefc
+
+
+! ROFI Config (Blue Rice)
+!rofi.modi: run
+!!rofi.width: 100
+!rofi.lines: 4
+!rofi.font: Hack 12
+!rofi.bw: 3
+!!rofi.padding: 500
+!rofi.hide-scrollbar: true
+!! ------------------------------------------------------------------------------
+!! ROFI Color theme Arch
+!! ------------------------------------------------------------------------------
+!! Use extended color scheme
+!rofi.color-enabled:                  true
+!! Color scheme for normal row
+!rofi.color-normal:                   #ffffff,#525d76,#f5f5f5,#5294e2,#ffffff
+!! Color scheme for urgent row
+!rofi.color-urgent:                   #ffffff,#dc322f,#f5f5f5,#5294e2,#dc322f
+!! Color scheme for active row
+!rofi.color-active:                   #ffffff,#c2cad0,#f5f5f5,#5294e2,#c2cad0
+!! Color scheme window
+!rofi.color-window:                   #ffffff,#f5f5f5
+!! Separator style (none, dash, solid)
+!rofi.separator-style:                solid
+
+
+
+
+! 1984 rofi configs 
+rofi.color-enabled: true
+rofi.color-window: #141021, #c16772, #9568a1
+rofi.color-normal: #141021, #ffeefc, #312842, #c16772, #ffeefc
+rofi.color-active: #141021, #c05c47, #312842, #c05c47, #ffeefc
+rofi.color-urgent: #141021, #e4b226, #312842, #e4b226, #ffeefc
+!rofi.width: 550
+rofi.padding: 10
+rofi.font: Hack 12
+rofi.bw: 3
+rofi.separator-style: solid
+rofi.hide-scrollbar: true
