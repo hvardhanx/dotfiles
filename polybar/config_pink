@@ -12,10 +12,10 @@ foreground-alt = #ee3333
 trans = #DA292b2e
 white = #eee
 grey = #444444
-junglegreen = #26c281
-niagra = #2abb9b
-riptide = #86E2D5
-green = #C8F7C5
+pink = #d75f87
+blue = #4f97d7
+purple = #875faf
+green = #20ad80
 red = #ee3333
 
 ;-------------------------------------------------------------------------------
@@ -66,7 +66,7 @@ tray-padding = 4
 type = custom/text
 content = " "
 content-font = 2
-content-foreground = ${colors.junglegreen}
+content-foreground = ${colors.pink}
 content-background = ${colors.trans}
 
 [module/arrow0]
@@ -75,39 +75,39 @@ type = custom/text
 content = " "
 content-font = 2
 content-foreground = ${colors.background}
-content-background = ${colors.junglegreen}
+content-background = ${colors.pink}
 
 [module/arrow1]
-; grey to niagra
+; grey to Blue
 type = custom/text
 content = " "
 content-font = 2
-content-foreground = ${colors.niagra}
+content-foreground = ${colors.blue}
 content-background = ${colors.grey}
 
 [module/arrow2]
-; niagra to riptide
+; Blue to Purple
 type = custom/text
 content = " "
 content-font = 2
-content-foreground = ${colors.riptide}
-content-background = ${colors.niagra}
+content-foreground = ${colors.purple}
+content-background = ${colors.blue}
 
 [module/arrow3]
-; riptide to junglegreen
+; Purple to pink
 type = custom/text
 content = " "
 content-font = 2
-content-foreground = ${colors.junglegreen}
-content-background = ${colors.riptide}
+content-foreground = ${colors.pink}
+content-background = ${colors.purple}
 
 [module/arrow4]
-; junglegreen to green
+; pink to green
 type = custom/text
 content = " "
 content-font = 2
 content-foreground = ${colors.green}
-content-background = ${colors.junglegreen}
+content-background = ${colors.pink}
 
 [module/arrow5]
 ; green to grey
@@ -158,18 +158,18 @@ blacklist-0 = num lock
 
 format-prefix = " KEY "
 format-prefix-font = 1
-format-prefix-foreground = ${colors.niagra}
+format-prefix-foreground = ${colors.blue}
 format-prefix-background = ${colors.background}
 
 label-layout = %layout%
 label-layout-font = 1
-label-layout-foreground = ${colors.niagra}
+label-layout-foreground = ${colors.blue}
 label-layout-background = ${colors.background}
 
 ; label-indicator-padding = 2
 ; label-indicator-margin = 1
-; label-indicator-background = ${colors.niagra}
-; label-indicator-underline = ${colors.niagra}
+; label-indicator-background = ${colors.blue}
+; label-indicator-underline = ${colors.blue}
 
 [module/filesystem]
 type = internal/fs
@@ -187,7 +187,7 @@ format = <label-state>
 
 label-focused = "%name% "
 label-focused-foreground = ${colors.background}
-label-focused-background = ${colors.junglegreen}
+label-focused-background = ${colors.pink}
 
 label-unfocused =
 label-urgent =
@@ -212,7 +212,7 @@ label-mode-background = ${colors.background}
 
 ; focused = Active workspace on focused monitor
 label-focused = " ● "
-label-focused-foreground = ${colors.junglegreen}
+label-focused-foreground = ${colors.pink}
 label-focused-background = ${colors.background}
 
 ; unfocused = Inactive workspace on any monitor
@@ -229,20 +229,20 @@ label-urgent-background = ${colors.background}
 type = internal/cpu
 interval = 2
 format-prefix = " CPU "
-format-prefix-foreground = ${colors.riptide}
+format-prefix-foreground = ${colors.purple}
 format-prefix-background = ${colors.background}
 label = %percentage%%
-label-foreground = ${colors.riptide}
+label-foreground = ${colors.purple}
 label-background = ${colors.background}
 
 [module/memory]
 type = internal/memory
 interval = 2
 format-prefix = " RAM "
-format-prefix-foreground = ${colors.junglegreen}
+format-prefix-foreground = ${colors.pink}
 format-prefix-background = ${colors.grey}
 label = %percentage_used%%
-label-foreground = ${colors.junglegreen}
+label-foreground = ${colors.pink}
 label-background = ${colors.grey}
 
 [module/wlan]
@@ -307,23 +307,23 @@ type = internal/volume
 format-volume = <ramp-volume><label-volume>
 
 label-volume = %percentage%%
-label-volume-foreground = ${colors.niagra}
+label-volume-foreground = ${colors.blue}
 label-volume-background = ${colors.background}
 label-muted = " MUTED "
-label-muted-foreground = ${colors.niagra}
+label-muted-foreground = ${colors.blue}
 label-muted-background = ${colors.background}
 
 ramp-volume-0 = " VOL "
-ramp-volume-0-foreground = ${colors.niagra}
+ramp-volume-0-foreground = ${colors.blue}
 ramp-volume-0-background = ${colors.background}
 ramp-volume-1 = " VOL "
-ramp-volume-1-foreground = ${colors.niagra}
+ramp-volume-1-foreground = ${colors.blue}
 ramp-volume-1-background = ${colors.background}
 ramp-volume-2 = " VOL "
-ramp-volume-2-foreground = ${colors.niagra}
+ramp-volume-2-foreground = ${colors.blue}
 ramp-volume-2-background = ${colors.background}
 ramp-volume-3 = " VOL "
-ramp-volume-3-foreground = ${colors.niagra}
+ramp-volume-3-foreground = ${colors.blue}
 ramp-volume-3-background = ${colors.background}
 
 [module/battery]
